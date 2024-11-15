@@ -14,4 +14,4 @@ def fatorial (n):
 def numero_binomial (n,k):
     return fatorial(n) / (fatorial(k) * fatorial(n-k))
 
-print ("O número binomial é", numero_binomial)
+print ("O número binomial é", numero_binomial(n,k))
