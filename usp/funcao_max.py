@@ -1,5 +1,5 @@
 def maximo (x,y):
     if x>y:
-        return print (x)
+        return x
     else:
-        return print (y)
+        return y
