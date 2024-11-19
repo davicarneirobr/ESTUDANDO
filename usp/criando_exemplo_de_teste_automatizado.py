@@ -20,3 +20,4 @@ def teste_fatorial4():
 
 def teste_fatorial5():
     assert fatorial(5) == 120
+
