@@ -5,3 +5,5 @@ def fizzbuzz (n):
         return "Buzz"
     if n%3 == 0 and n%5 == 0:
         return "FizzBuzz"
+    if n%3 != 0 and n%5 != 0:
+        return n
