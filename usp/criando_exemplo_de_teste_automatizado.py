@@ -1,7 +1,7 @@
 #criando de novo para fatorial
 def fatorial (n):
-    if n == 0:
-        return 1
+    if n < 0:
+        return 0
     else:
         i = fat = 1
         while i <= n:
