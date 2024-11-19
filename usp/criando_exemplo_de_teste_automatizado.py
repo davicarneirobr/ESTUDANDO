@@ -2,7 +2,7 @@
 def fatorial (n):
     i = fat = 1
     while i <= n:
-        fat = fat * 1
+        fat = fat * i
         i = i + 1
     return fat
 
