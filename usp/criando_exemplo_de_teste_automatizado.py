@@ -7,17 +7,16 @@ def fatorial (n):
     return fat
 
 def teste_fatorial0 ():
-    assert fatorial(0) == 1
+    assert fatorial (0) == 1
 
 def teste_fatorial1 ():
     assert fatorial (1) == 1
 
 def teste_fatorial_negativo ():
-    assert fatorial(-10) == 0
+    assert fatorial (-10) == 0
 
 def teste_fatorial4():
-    assert fatorial(4) == 24
+    assert fatorial (4) == 24
 
 def teste_fatorial5():
-    assert fatorial(5) == 120
-
+    assert fatorial (5) == 120
