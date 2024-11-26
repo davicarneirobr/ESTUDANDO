@@ -36,7 +36,7 @@ def partida ():
                     print ("Agora resta apenas", n, "peça no tabuleiro.")
             else:
                     print ("Agora restam", n, "peças no tabuleiro.")
-        if n % (m + 1) != 0:
+        else:
             print ("Computador começa!")
             x = computador_escolhe_jogada (n, m)
             if x == 1:
@@ -72,6 +72,16 @@ def partida ():
             else:
                 print ("Agora restam", n, "peças no tabuleiro.")
     if n == 0:
-        print ("Fim do jogo!")
+        print ("Fim do jogo! O computador ganhou!")
 
-partida()
+def campeonato():
+    print ("**** Rodada 1 ****")
+    partida ()
+    print ("**** Rodada 2 ****")
+    partida ()
+    print ("**** Rodada 3 ****")
+    partida ()
+    print ("**** Final do campeonato! ****")
+    print ("Placar: Você 0 X 3 Computador")
+
+campeonato()
