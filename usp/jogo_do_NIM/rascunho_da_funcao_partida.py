@@ -16,19 +16,19 @@ def partida ():
         m = int(input("Limite de peças por jogada?"))
         if n % (m + 1) == 0:
             print ("Você começa!")
-            usuario_escolhe_jogada (n, m)
+            y = usuario_escolhe_jogada (n, m)
+            n = n - y
             if y == 1:
                     print ("Voce tirou", y, "peça.")
             else:
                     print ("Voce tirou", y, "peças.")
-                    n = n - y
             if n == 1:
                     print ("Agora resta apenas", n, "peça no tabuleiro.")
             else:
                     print ("Agora restam", n, "peças no tabuleiro.")
         if n % (m + 1) != 0:
             print ("Computador começa!")
-            computador_escolhe_jogada (n, m)
+            x = computador_escolhe_jogada (n, m)
             if x == 1:
                 print ("O computador tirou", x, "peça.")
             else:
