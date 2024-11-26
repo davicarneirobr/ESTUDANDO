@@ -84,4 +84,3 @@ def campeonato():
     print ("**** Final do campeonato! ****")
     print ("Placar: Você 0 X 3 Computador")
 
-campeonato()
