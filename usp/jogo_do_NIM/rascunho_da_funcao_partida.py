@@ -9,6 +9,8 @@
 
 def partida ():
     n = 0
+    x = 0
+    y = 0
     if n == 0:
         n = int(input("Quantas peças?"))
         m = int(input("Limite de peças por jogada?"))
