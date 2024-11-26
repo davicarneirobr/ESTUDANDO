@@ -1,6 +1,6 @@
 def  usuario_escolhe_jogada (n, m):
     y = int(input("Quantas peças você vai tirar?"))
-    while y > m or y > n:
+    while y > m or y > n or y == 0:
         print("Oops! Jogada inválida! Tente de novo.")
         y = int(input("Quantas peças você vai tirar?"))
     return y
@@ -26,7 +26,7 @@ def partida ():
         m = int(input("Limite de peças por jogada?"))
         if n % (m + 1) == 0:
             print ("Você começa!")
-            usuario_escolhe_jogada (n, m)
+            y = usuario_escolhe_jogada (n, m)
             if y == 1:
                     print ("Voce tirou", y, "peça.")
             else:
@@ -38,7 +38,7 @@ def partida ():
                     print ("Agora restam", n, "peças no tabuleiro.")
         if n % (m + 1) != 0:
             print ("Computador começa!")
-            computador_escolhe_jogada (n, m)
+            x = computador_escolhe_jogada (n, m)
             if x == 1:
                 print ("O computador tirou", x, "peça.")
             else:
@@ -50,7 +50,7 @@ def partida ():
                 print ("Agora restam", n, "peças no tabuleiro.")
     while n != 0:
         if n % (m + 1) == 0:
-            usuario_escolhe_jogada (n, m)
+            y = usuario_escolhe_jogada (n, m)
             if y == 1:
                 print ("Voce tirou", y, "peça.")
             else:
@@ -61,7 +61,7 @@ def partida ():
             else:
                 print ("Agora restam", n, "peças no tabuleiro.")
         if n % (m + 1) != 0:
-            computador_escolhe_jogada (n, m)
+            x = computador_escolhe_jogada (n, m)
             if x == 1:
                 print ("O computador tirou", x, "peça.")
             else:
