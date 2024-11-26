@@ -9,7 +9,7 @@
 
 def partida ():
     n = 0
-    x = 0
+    x = 1
     y = 0
     if n == 0:
         n = int(input("Quantas peças?"))
