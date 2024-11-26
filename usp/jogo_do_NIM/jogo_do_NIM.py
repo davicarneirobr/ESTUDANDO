@@ -3,7 +3,7 @@
 #definindo a função usuario_escolhe_jogada
 def  usuario_escolhe_jogada (n, m):
     y = int(input("Quantas peças você vai tirar?"))
-    while y > m or y > n or y == 0:
+    while y > m or y > n or y <= 0:
         print("Oops! Jogada inválida! Tente de novo.")
         y = int(input("Quantas peças você vai tirar?"))
     return y
@@ -14,8 +14,6 @@ def  computador_escolhe_jogada (n, m):
         x = 1
         while (n - x) % (m + 1) != 0:
             x = x + 1
-        maior_divisor_de_x = m // x
-        x = maior_divisor_de_x * x
         return x
     else:
         x = n
