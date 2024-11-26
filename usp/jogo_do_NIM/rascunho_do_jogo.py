@@ -28,14 +28,14 @@ def partida ():
             print ("Você começa!")
             usuario_escolhe_jogada (n, m)
             if y == 1:
-                print ("Voce tirou", y, "peça.")
+                    print ("Voce tirou", y, "peça.")
             else:
-                print ("Voce tirou", y, "peças.")
-            n = n - y
+                    print ("Voce tirou", y, "peças.")
+                    n = n - y
             if n == 1:
-                print ("Agora resta apenas", n, "peça no tabuleiro.")
+                    print ("Agora resta apenas", n, "peça no tabuleiro.")
             else:
-                print ("Agora restam", n, "peças no tabuleiro.")
+                    print ("Agora restam", n, "peças no tabuleiro.")
         if n % (m + 1) != 0:
             print ("Computador começa!")
             computador_escolhe_jogada (n, m)
@@ -73,3 +73,5 @@ def partida ():
                 print ("Agora restam", n, "peças no tabuleiro.")
     if n == 0:
         print ("Fim do jogo!")
+
+partida()
