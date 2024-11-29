@@ -7,3 +7,5 @@ playlist = ["hino do flamengo", "hey jude", "New York! New York"]
 list = [3, 5, 4, 2, 62]
 
 print(list [0])
+
+print (list [-1])
