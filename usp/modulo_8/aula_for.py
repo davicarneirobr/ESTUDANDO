@@ -31,3 +31,9 @@ for i in range(-10,10,2):
     print (i*i)
 
 #lembre-se que pro Python o início é 0, logo, nao imprime o quadrado de +10, é meio que aberto no 10
+
+#to mudando agora o primos para cubo dos primos
+for i in range(len(primos)):
+    primos[i] = primos [i]**3
+cubo_dos_primos = primos
+print (cubo_dos_primos)
