@@ -39,3 +39,40 @@ lista2[0] = "amarelo"
 print (lista2)
 
 print (lista1)
+
+clone2 = lista2 [:]
+
+print (clone2)
+
+#pertinencia a uma lista (se determinado elemento pertence ou nao a lista)
+
+print ("rosa" in lista1)
+
+print ("rosa" in lista2)
+
+#Concatenacao de listas
+
+print ([1,2] + [3,4])
+
+
+#listas por repeticao
+
+a = [1,2,3]
+
+a_triplicado = a * 3
+
+print (a_triplicado)
+
+#remocao de elementos em listas
+
+del a[1]
+
+print (a)
+
+listinha = ["a", "b", "c", "d", "e", "f"]
+
+print (listinha)
+
+del listinha[2:5]
+
+print (listinha)
