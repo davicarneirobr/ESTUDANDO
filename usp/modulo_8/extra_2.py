@@ -5,7 +5,7 @@ while novo_inteiro != 0:
     if novo_inteiro != 0:
         lista.append (novo_inteiro)
 
-lista.sort (reverse=True)
+lista.reverse ()
 
 for inteiro in lista:
     print (inteiro)
