@@ -174,8 +174,8 @@ def calcula_assinatura(texto):
     return assinatura
 
 def avalia_textos(textos, ass_cp):
-    ass_cp = le_assinatura()
     textos = le_textos()
+    ass_cp = le_assinatura()
     lista_de_assinaturas_de_cada_texto_inserido = []
     lista_de_valores_de_similaridade = []
     for texto in textos:
