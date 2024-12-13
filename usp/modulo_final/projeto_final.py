@@ -79,9 +79,100 @@ def compara_assinatura(as_a, as_b):
     valor_similar = (valor0 + valor1 + valor2 + valor3 + valor4 + valor5) / 6
     return valor_similar
 
+def listando_palavras(texto):
+    '''A função recebe um texto e devolve uma lista de todas as palavras do texto.'''
+    lista_de_sentencas = separa_sentencas(texto)
+    lista_de_palavras = []
+    for sentenca in lista_de_sentencas:
+        frases = separa_frases(sentenca)
+        for frase in frases:
+            palavras = separa_palavras(frase)
+            lista_de_palavras.extend(palavras)  # Adiciona diretamente as palavras na lista plana
+    return lista_de_palavras
+
+def soma_de_caracteres_de_uma_lista_de_palavras (lista_de_palavras):
+    soma_de_caracteres = 0
+    for palavra in lista_de_palavras:
+        soma_de_caracteres = len (palavra) + soma_de_caracteres
+    return soma_de_caracteres
+
+def assinatura_zero (lista_de_palavras):
+    numero_de_caracteres = soma_de_caracteres_de_uma_lista_de_palavras (lista_de_palavras)
+    soma_de_palavras = len (lista_de_palavras)
+    valor_assinatura_zero = numero_de_caracteres / soma_de_palavras
+    return valor_assinatura_zero
+
+def assinatura_um (lista_de_palavras):
+    numero_de_palavras_diferentes = n_palavras_diferentes (lista_de_palavras)
+    soma_de_palavras = len (lista_de_palavras)
+    valor_assinatura_um = numero_de_palavras_diferentes / soma_de_palavras
+    return valor_assinatura_um
+
+def assinatura_dois (lista_de_palavras):
+    numero_de_palavras_unicas = n_palavras_unicas (lista_de_palavras)
+    soma_de_palavras = len (lista_de_palavras)
+    valor_assinatura_dois = numero_de_palavras_unicas / soma_de_palavras
+    return valor_assinatura_dois
+
+def assinatura_tres(texto):
+    # Parte 1 - Lista de sentenças
+    lista_de_sentencas = separa_sentencas(texto)
+    
+    # Parte 2 - Soma dos caracteres das sentenças (sem os caracteres de separação)
+    soma_de_caracteres_da_sentenca = sum(len(sentenca) for sentenca in lista_de_sentencas)
+    
+    # Parte 3 - Número de sentenças
+    numero_de_sentencas = len(lista_de_sentencas)
+    
+    # Calcula o valor da assinatura três
+    valor_assinatura_tres = soma_de_caracteres_da_sentenca / numero_de_sentencas
+    return valor_assinatura_tres
+
+def assinatura_quatro (texto):
+    # primeiramente, ele separa o texto em sentenças e cria um lista de sentencas
+    lista_de_sentencas = separa_sentencas (texto)
+    # agora preciso criar uma lista de frases a partir de uma lista de sentencas
+    # a funcao já dada anteriormente separa_frases (sentença), pega um string, uma frase
+    # e devolve uma lista de frases dessa sentença
+    # para isso, vou ter que correr um for na lista de senteça para criar uma lista de frases
+    lista_de_frases = []
+    for sentenca in lista_de_sentencas:
+        frases = separa_frases(sentenca)
+        lista_de_frases.extend (frases) # criando a lista de frases
+    numero_total_de_frases = len (lista_de_frases)
+    numero_total_de_sentencas = len (lista_de_sentencas)
+    valor_assinatura_quatro = numero_total_de_frases / numero_total_de_sentencas
+    return valor_assinatura_quatro
+
+def assinatura_cinco (texto):
+    lista_de_sentencas = separa_sentencas (texto)
+    lista_de_frases = []
+    for sentenca in lista_de_sentencas:
+        frases = separa_frases(sentenca)
+        lista_de_frases.extend (frases)
+    soma_de_caracteres_da_frase = sum(len(frase) for frase in lista_de_frases)
+    numero_de_frases = len (lista_de_frases)
+    valor_assinatura_cinco = soma_de_caracteres_da_frase / numero_de_frases
+    return valor_assinatura_cinco
+
 def calcula_assinatura(texto):
-    '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
-    pass
+    assinatura = []
+    lista_de_palavras_do_texto = listando_palavras (texto)
+    soma_de_caracteres_da_lista_de_palavras_do_texto = soma_de_caracteres_de_uma_lista_de_palavras (lista_de_palavras_do_texto)
+    assinatura0 = assinatura_zero (lista_de_palavras_do_texto)
+    assinatura.append (assinatura0)
+    assinatura1 = assinatura_um (lista_de_palavras_do_texto)
+    assinatura.append (assinatura1)
+    assinatura2 = assinatura_dois (lista_de_palavras_do_texto)
+    assinatura.append (assinatura2)
+    assinatura3 = assinatura_tres (texto)
+    assinatura.append (assinatura3)
+    assinatura4 = assinatura_quatro (texto)
+    assinatura.append (assinatura4)
+    assinatura5 = assinatura_cinco (texto)
+    assinatura.append (assinatura5)
+    return assinatura
+
 
 def avalia_textos(textos, ass_cp):
     '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e uma assinatura ass_cp e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
