@@ -17,10 +17,13 @@ def calcula_assinatura(texto):
 
 
 # [0] = Tamanho médio de palavra é a soma dos tamanhos das palavras dividida pelo número total de palavras
+    # feito
 
 # [1] = Relação Type-Token é o número de palavras diferentes dividido pelo número total de palavras
+    # feito
 
 # [2] = Razão Hapax Legomana é o número de palavras que aparecem uma única vez dividido pelo total de palavras
+    # feito
 
 # [3] = Tamanho médio de sentença é a soma dos números de caracteres em todas as sentenças dividida pelo número de sentenças
 
