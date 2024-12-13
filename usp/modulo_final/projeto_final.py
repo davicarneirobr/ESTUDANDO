@@ -73,9 +73,15 @@ def compara_assinatura(as_a, as_b):
     '''IMPLEMENTAR. Essa funcao recebe duas assinaturas de texto e deve devolver o grau de similaridade nas assinaturas.'''
     pass
 
-def calcula_assinatura(texto):
-    '''IMPLEMENTAR. Essa funcao recebe um texto e deve devolver a assinatura do texto.'''
-    pass
+def compara_assinatura(as_a, as_b):
+    valor0 = abs(as_a[0] - as_b[0])
+    valor1 = abs(as_a[1] - as_b[1])
+    valor2 = abs(as_a[2] - as_b[2])
+    valor3 = abs(as_a[3] - as_b[3])
+    valor4 = abs(as_a[4] - as_b[4])
+    valor5 = abs(as_a[5] - as_b[5])
+    valor_similar = (valor0 + valor1 + valor2 + valor3 + valor4 + valor5) / 6
+    return valor_similar
 
 def avalia_textos(textos, ass_cp):
     '''IMPLEMENTAR. Essa funcao recebe uma lista de textos e uma assinatura ass_cp e deve devolver o numero (1 a n) do texto com maior probabilidade de ter sido infectado por COH-PIAH.'''
