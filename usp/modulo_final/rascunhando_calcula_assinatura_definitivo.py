@@ -123,7 +123,7 @@ def assinatura_tres(texto):
     lista_de_sentencas = separa_sentencas(texto)
     
     # Parte 2 - Soma dos caracteres das sentenças (sem os caracteres de separação)
-    soma_de_caracteres_da_sentenca = sum(len(sentenca.strip()) for sentenca in lista_de_sentencas)
+    soma_de_caracteres_da_sentenca = sum(len(sentenca) for sentenca in lista_de_sentencas)
     
     # Parte 3 - Número de sentenças
     numero_de_sentencas = len(lista_de_sentencas)
