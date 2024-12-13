@@ -27,6 +27,7 @@ def calcula_assinatura(texto):
 
 # [3] = Tamanho médio de sentença é a soma dos números de caracteres em todas as sentenças dividida pelo número de sentenças
 
+
 # [4] = Complexidade de sentença é o número total de frases divido pelo número de sentenças
 
 # [5] = Tamanho médio de frase é a soma do número de caracteres em cada frase dividida pelo número de frases no texto

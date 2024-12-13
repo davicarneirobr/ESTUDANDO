@@ -19,4 +19,9 @@ def n_palavras_diferentes(lista_palavras):
 
     return len(freq)
 
+def assinatura_um (lista_de_palavras):
+    numero_de_palavras_diferentes = n_palavras_diferentes (lista_de_palavras)
+    soma_de_palavras = len (lista_de_palavras)
+    valor_assinatura_um = numero_de_palavras_diferentes / soma_de_palavras
+    return valor_assinatura_um
 

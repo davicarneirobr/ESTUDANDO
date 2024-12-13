@@ -7,10 +7,16 @@
 # len (lista_de_palavras) é o total / número de palavras de um texto
 # [0] vai ser dado pela divisão de soma_de_caracteres / len (lista_de_palavras)
 
-def assinatura_zero (lista_de_palavras):
+
+
+def soma_de_caracteres_de_uma_lista_de_palavras (lista_de_palavras):
     soma_de_caracteres = 0
     for palavra in lista_de_palavras:
         soma_de_caracteres = len (palavra) + soma_de_caracteres
+    return soma_de_caracteres
+
+def assinatura_zero (lista_de_palavras):
+    numero_de_caracteres = soma_de_caracteres_de_uma_lista_de_palavras (lista_de_palavras)
     soma_de_palavras = len (lista_de_palavras)
-    valor_assinatura_zero = soma_de_caracteres / soma_de_palavras
+    valor_assinatura_zero = numero_de_caracteres / soma_de_palavras
     return valor_assinatura_zero
