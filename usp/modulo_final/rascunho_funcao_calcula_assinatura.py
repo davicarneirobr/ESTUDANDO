@@ -2,6 +2,12 @@ def calcula_assinatura(texto):
     assinatura = []
 
 
+def calcula_primeira_assinatura(texto):
+    texto_sem_espacos = texto.replace(" ", "")
+    numero_de_caracteres = len(texto_sem_espacos)
+    lista_de_palavras_do_texto = separa_palavras(texto)
+    quantidade_de_palavras = len (lista_de_palavras_do_texto)
+    assinatura0 = numero_de_caracteres / quantidade_de_palavras
 
 
 def calcula_assinatura(texto):
