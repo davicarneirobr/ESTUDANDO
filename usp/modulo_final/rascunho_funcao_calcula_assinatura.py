@@ -1,15 +1,5 @@
-def calcula_primeira_assinatura(texto):
-    texto_sem_espacos = texto.replace(" ", "")
-    numero_de_caracteres = len(texto_sem_espacos)
-    lista_de_palavras_do_texto = separa_palavras(texto)
-    quantidade_de_palavras = len (lista_de_palavras_do_texto)
-    assinatura0 = numero_de_caracteres / quantidade_de_palavras
-    return assinatura0
-
 # vai ter que refazer pq ta errado o texto sem espacos
 # vai pegar o texto aq e passar pela funcao SEPARA_SENTENCAS (TEXTO) que vai retornar uma lista de sentenças
-
-
 
 
 def calcula_assinatura(texto):
@@ -26,8 +16,10 @@ def calcula_assinatura(texto):
     # feito
 
 # [3] = Tamanho médio de sentença é a soma dos números de caracteres em todas as sentenças dividida pelo número de sentenças
-
+    # feito
 
 # [4] = Complexidade de sentença é o número total de frases divido pelo número de sentenças
+    # feito
 
 # [5] = Tamanho médio de frase é a soma do número de caracteres em cada frase dividida pelo número de frases no texto
+    # feito
