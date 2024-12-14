@@ -16,4 +16,12 @@ def soma_matrizes (m1, m2):
         return False
     else:
         matriz_somada = []
-         
+        for i in range (num_lin):
+            linha = []
+            for j in range (num_col):
+                valor1 = m1[i][j]
+                valor2 = m2[i][j]
+                valor = valor1 + valor2
+                linha.append (valor)
+            matriz_somada.append (linha)
+        return matriz_somada
