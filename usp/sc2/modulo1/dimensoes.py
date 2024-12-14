@@ -6,6 +6,4 @@ def dimensoes (matriz):
         lista_da_linha = linha
         col = len (lista_da_linha)
     return print(lin,"X",col, sep="")
-
-dimensoes ([[1, 2, 3], [4, 5, 6]])
         
